@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SkillSwap 
+![Logo](https://skillswapbucket.s3.ap-south-1.amazonaws.com/assets/skillswap_logo_icon.png)
 
-## Getting Started
+SkillSwap is an innovative platform designed for reciprocal learning and mentoring, addressing the need for affordable professional growth opportunities. It facilitates a barter system where users can both teach and learn, leveraging their skills for mutual benefit. The platform features user authentication, profile management, AI-driven matching, communication tools, and session scheduling to enhance user engagement and learning outcomes. SkillSwap aims to revolutionize the way individuals seek and offer professional mentoring, making it accessible, efficient, and tailored to personal growth goals.
 
-First, run the development server:
+## Table of Contents
+- [Demo](#demo)
+- [Installation](#installation)
+- [Technology Stack](#technology-stack)
+- [Authors](#authors)
+- [License](#license)
 
+## Demo
+**Demo Link**: https://skillswap.anandbhagat.com/
+
+**Test Credentials**:
+- User 1:
+    - **Email**: anbhagat1997@gmail.com
+    - **Password**: 12345678    
+- User 2:
+    - **Email**: anbhagat2805@gmail.com
+    - **Password**: 12345678
+
+## Installation
+
+Before running the project, ensure you have Node.js version `21.5.0` and npm version `10.2.4` or later installed. Then, follow these steps:
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+    git clone https://github.com/pesto-students/front-end-repo-p11-bit-busters-skill-swap.git
+    cd front-end-repo-p11-bit-busters-skill-swap
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```
+    npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Configure environment variables:
+Create a .env file in the root directory and populate it with the below keys:
+```
+    VITE_APP_API_URL=[Your API URL here]
+    VITE_APP_SOCKET_URL=[Your Socket URL here]
+    VITE_APP_SENTRY_DSN=[Your Sentry DSN here]
+    VITE_APP_URL=[Your App URL here]
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Start the project:
+```
+    npm run dev
+```
+Access the project through http://localhost:5173.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Technology Stack
+- React
+- Redux
+- Tailwind CSS
+- Socket.io-client
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Authors
+- [Anand Bhagat](https://anandbhagat.com/)
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License - see [MIT License](https://opensource.org/licenses/MIT) for details.
